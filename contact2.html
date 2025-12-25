@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiès Kaay Nu Coder</title>
+    <link rel="stylesheet" href="contact2.css">
+</head>
+<body>
+    <div>
+        <h1>Contactez-nous</h1>
+        <p class="p1">Notre équipe est là pour répondre à toutes vos préoccupations.</p>
+    </div>
+    <form action="" id="monForm">
+        <div class="formulaire">
+            <label for="nom">Nom</label>
+            <input placeholder="Entrer votre nom" id="nom" type="text">
+            <span id="erreur"></span>
+            <label for="prenom">Prénom</label>
+            <input placeholder="Entrer votre prénom" id="prenom" type="text">
+            <span id="erreur2"></span>
+            <label for="genre">Genre</label>
+            <select id="genre">
+                <option value="Homme">Homme</option>
+                <option selected value="Femme">Femme</option>
+            </select>      
+        </div>
+        <div class="lastdiv">
+        <textarea placeholder="Votre message" id="monTa"></textarea> 
+        <span id="erreurTa"></span>
+        <input id="valider" type="submit"> 
+        </div>
+        <script src="contact2valid.js"></script>
+    </form>
+</body>
+</html>
