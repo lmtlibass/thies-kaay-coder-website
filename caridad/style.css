@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    background-image: url(img.jpg);
+    background-position: center;/*centrer l'image*/
+    background-size:cover ;
+   /* background-color: #1B91B1;*/
+    display: flex;
+    justify-content: center;/*pour centrer le formulaire*/
+    align-items: center;
+    height: 100vh; /*centrer au molieu de l'ecran*/
+
+}
+section{
+    background: transparent;/*arriere plan transparent*/
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);/*floutage*/
+    padding: 30px;/*pour l'espacement interieur*/
+    width: 320px; /*la lageur du formulaire*/
+    border-radius: 20px; /*arrondir les angles*/
+}
+section h1{
+    font-size: 30px; /*la taille de l'ecriture*/
+    text-align: center; /*sa position*/
+    color: #fff; /*sa couleur*/
+    margin-bottom: 20px; /*la marge du bas*/
+}
+/*la balise div des input*/
+.box{
+    width: 100%;
+    /*position: relative;*/
+    margin-bottom: 10px;
+}
+/*les input*/
+input{
+    width: 100%; /*largeur de l'input*/
+    padding: 15px;/*la marge interieur*/
+    border-radius: 25px;/*arrondir les angles*/
+    outline: none;/*la bordure dans le input*/
+    background-color: transparent;/*la trasparence*/
+    border: 2px solid rgb(255, 255, 255, 0.2); /*la couleur du bordure*/
+    color: black;/*couleur des ecriture*/
+    padding-right: 40px;/*espacement a droite*/
+    font-size: 20px;
+}
+
+.validation{
+    text-align: center;/*centrer le bouton*/
+}
+
+.bouton{
+    background-color: transparent;/*arriere plan du bouton*/
+    font-size: 25px;//*taille de l'ecriture*/
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    outline: none;
+}
+/*bouton au survole de la souris*/
+.bouton:hover{
+    background-color: #DC2C8C;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.5s;
+}
+label{
+    font-size: 20px;
+}
+::placeholder{
+    font-size: 15px;
+    color: black;
+    font-style: italic;
+}

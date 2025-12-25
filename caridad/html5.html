@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="caridad.js" defer></script>
+</head>
+<body>
+    <section>
+        <h1>INSCRIPTION</h1>
+     <form action="" method="post" id="myForm">
+
+        <label for="nom_dutilisateur">Nom</label><br>
+        <div class="box">
+          <input type="text" id="nom_dutilisateur" placeholder="Nom"><br>
+        </div>
+
+        <label for="prenom">Prenom</label><br>
+        <div class="box">
+          <input type="text" id="prenom" placeholder="Prenom"><br>
+        </div>
+
+        <label for="numero">votre numrero</label><br>
+        <div class="box">
+          <input type="number" id="numero" placeholder="numero de telephone">
+        </div>
+
+         <label for="naissance">date de naissance</label><br>
+         <div class="naissance">
+            <input type="date" name="" id="naissance">
+         </div>
+         <div id="les_choix">
+         <label for="choix">Choix de Formation:</label><br>
+           <input type="list" list="choix" placeholder="choisissez votre formation">
+         <datalist id="choix">
+         <option value="developpement web">
+         <option value="Marketing digital">
+         <option value="Cyber Securité">
+        </datalist>
+       </div>
+        <div class="validation">
+            <button type="submit" class="bouton">Envoyer</button>
+        </div>
+     </form>
+     </section>
+</body>
+</html>
