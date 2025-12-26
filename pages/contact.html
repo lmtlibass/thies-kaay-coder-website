@@ -4,25 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Code Vision</title>
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  <link rel="stylesheet" href="../assets/css/accueil.css">
+
 </head>
 <body>
 
-<!-- HEADER AVEC LOGO -->
-<header class="header">
-  <div class="header-container">
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="logos-code-vision.png" alt="Logos Code Vision">
-    </div>
-
-    <!-- TITRE -->
-    <div class="header-text">
-      <h1>Code Vision</h1>
-      <p>Contactez-nous</p>
-    </div>
-  </div>
-</header>
+  <!-- HEADER AVEC LOGO -->
+  <header class="header">
+    <nav class="navbar-container">
+        <a href="#" class="logo">Thiès <span>Kaay Ñu Coder</span></a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li><a href="concept.html" class="nav-link">Concept</a></li>
+            <li>
+                <a href="pourquoi.html" class="nav-link">Pourquoi nous ?</a>
+            </li>
+            <li>
+                <a href="contact.html" class="btn-cta"
+                    >Rejoindre l'aventure</a
+                >
+            </li>
+        </ul>
+        <div class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+  </header>
 
 <!-- CONTENU PRINCIPAL -->
 <main class="container">
@@ -52,10 +62,35 @@
   </form>
 </main>
 
-<footer>
-  <a href="mentions-legales.html">Mentions légales</a>
-</footer>
+  <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+          <div>
+              <h4>Thiès Kaay Ñu Coder</h4>
+              <p>
+                  Inspiré par les couleurs et les valeurs de Wommate.
+                  Ensemble pour le numérique à Thiès.
+              </p>
+          </div>
+          <div>
+              <h4>Navigation</h4>
+              <ul>
+                  <li><a href="#home">Accueil</a></li>
+                  <li><a href="#concept">Concept</a></li>
+                  <li><a href="#pourquoi">Pourquoi nous ?</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4>Contact</h4>
+              <p>Thiès, Sénégal</p>
+              <p>Email: contact@kaaygnucoder.sn</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 Thiès Kaay Ñu Coder. Développé avec passion.</p>
+      </div>
+    </footer>
 
-<script src="contact.js"></script>
+<script src="../assets/js/contact.js"></script>
 </body>
 </html>

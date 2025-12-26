@@ -1,149 +1,118 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-/* HEADER AVEC LOGO */
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+/* --- PAGE CONTACT --- */
 
-.logo img {
-  width: 70px;
-  height: auto;
-}
-
-.header-text {
-  text-align: left;
-}
-
-/* RESPONSIVE LOGO */
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: row;
-  }
-
-  .logo img {
-    width: 40px;
-  }
-}
-
-/* BODY */
-body {
-  background-color: #ffffff;
-  color: #0a1f44;
-}
-
-/* HEADER */
-header {
-  background-color: #0a1f44;
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 15px;
-}
-
-header h1 {
-  font-size: 28px;
-}
-
-header p {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-/* CONTENEUR PRINCIPAL */
+/* On s'assure que le contenu ne soit pas caché par le header fixe */
 .container {
-  max-width: 520px;
-  margin: 40px auto;
-  padding: 25px;
-  border: 1px solid #0a1f44;
-  border-radius: 8px;
-  background-color: #ffffff;
+    padding-top: calc(var(--nav-height) + 40px);
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
-/* FORMULAIRE */
+/* Style du Formulaire */
+#contactForm {
+    background: var(--white);
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Champs de saisie */
 .field {
-  margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
+.field label {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.9rem;
 }
 
-/* INPUTS */
-input,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1.5px solid #0a1f44;
-  border-radius: 5px;
-  font-size: 14px;
+.field input, 
+.field textarea {
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
 }
 
-/* FOCUS UX */
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #0a1f44;
-  box-shadow: 0 0 5px rgba(10, 31, 68, 0.4);
+.field input:focus, 
+.field textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(220, 44, 140, 0.1);
 }
 
-/* BOUTON */
-button {
-  width: 100%;
-  padding: 14px;
-  background-color: #0a1f44;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
+/* Bouton Envoyer */
+#contactForm button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
 }
 
-button:hover {
-  opacity: 0.9;
+#contactForm button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
 }
 
-/* MESSAGES */
+/* Messages d'erreur et succès */
 .error {
-  color: red;
-  font-size: 12px;
-  margin-top: 4px;
+    color: #e11d48;
+    font-size: 0.8rem;
+    height: 15px; /* Évite les sauts de mise en page */
 }
 
 #successMessage {
-  color: #00ff00;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 15px;
+    color: #10b981;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
-/* FOOTER */
+/* Footer de la page contact */
 footer {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--white);
 }
 
 footer a {
-  color: #0a1f44;
-  text-decoration: none;
-  font-weight: bold;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    transition: var(--transition);
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .container {
-    margin: 20px;
-    padding: 20px;
-  }
+footer a:hover {
+    color: var(--secondary-color);
+}
 
-  header h1 {
-    font-size: 22px;
-  }
+/* --- RESPONSIVE --- */
+@media (max-width: 600px) {
+    #contactForm {
+        padding: 25px;
+        width: 95%;
+    }
 }

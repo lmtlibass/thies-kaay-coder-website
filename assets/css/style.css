@@ -1,0 +1,104 @@
+/* --- PAGE À PROPOS --- */
+
+.apropos-page {
+    padding-top: var(--nav-height);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hero section à propos */
+.about-hero {
+    background: linear-gradient(rgba(27, 145, 177, 0.9), rgba(27, 145, 177, 0.9)), url('../img/thies-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-hero .subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Grille des valeurs */
+.values {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    background: var(--bg-light);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.value-card .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Section Équipe / Texte */
+.team {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.team-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+}
+
+/* Footer simple */
+.footer-simple {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+}

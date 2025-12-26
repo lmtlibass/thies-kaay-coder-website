@@ -4,137 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiès Kaay Gnou Coder</title>
-  <link rel="stylesheet" href="thies.css">
+  <link rel="stylesheet" href="../assets/css/thies.css">
+  <link rel="stylesheet" href="../assets/css/accueil.css">
 </head>
 <body>
 
 <!--  EN-TÊTE DU SITE -->
-<header>
-  <nav class="navbar">
-
-    <!-- Logo à gauche -->
-    <div class="logo">
-      <!-- styliser un texte -->
-      <span>Thiès Kaay Gnou Coder</span>
-    </div>
-
-    <!-- Bouton menu hamburger (mobile) -->
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
-    </div>
-
-    <!-- Menu de navigation -->
-    <ul class="menu" id="menu">
-      <li><a href="#accueil">Accueil</a></li>
-      <!-- Page active -->
-      <li><a href="#concept" class="active">Concept & Méthodologie</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </nav>
-</header>
+  <header class="header">
+    <nav class="navbar-container">
+        <a href="#" class="logo">Thiès <span>Kaay Ñu Coder</span></a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="../index.html" class="nav-link">Accueil</a></li>
+            <li><a href="concept.html" class="nav-link">Concept</a></li>
+            <li>
+                <a href="pourquoi.html" class="nav-link">Pourquoi nous ?</a>
+            </li>
+            <li>
+                <a href="contact.html" class="btn-cta"
+                    >Rejoindre l'aventure</a
+                >
+            </li>
+        </ul>
+        <div class="mobile-toggle" id="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+  </header>
 
 <!-- CONTENU PRINCIPAL -->
-<main class="page">
+  <main class="page">
 
-  <!-- SECTION CONCEPT-->
-  <section class="section concept" id="concept">
-    <div class="content">
+    <!-- SECTION CONCEPT-->
+    <section class="section concept" id="concept">
+      <div class="content">
 
-      <!-- Image du concept -->
-      <img src="image.jpeg" alt="Immersion digitale">
+        <!-- Image du concept -->
+        <img src="../assets/img/image.jpeg" alt="Immersion digitale">
 
-      <!-- Texte du concept -->
-      <div class="text">
-        <h1>Le concept Thiès Kaay Gnou Coder</h1>
+        <!-- Texte du concept -->
+        <div class="text">
+          <h1>Le concept Thiès Kaay Gnou Coder</h1>
 
-        <p>
-          <strong>Thiès Kaay Gnou Coder</strong> est une immersion intensive
-          d’une semaine dédiée aux métiers du digital.
-        </p>
+          <p>
+            <strong>Thiès Kaay Gnou Coder</strong> est une immersion intensive
+            d’une semaine dédiée aux métiers du digital.
+          </p>
 
-        <p>
-          Le programme combine coaching, ateliers pratiques
-          et projets concrets basés sur des situations réelles.
-        </p>
+          <p>
+            Le programme combine coaching, ateliers pratiques
+            et projets concrets basés sur des situations réelles.
+          </p>
 
-        <p>
-          Les domaines abordés sont le
-          <strong>marketing digital</strong> et le
-          <strong>développement web</strong>.
-        </p>
+          <p>
+            Les domaines abordés sont le
+            <strong>marketing digital</strong> et le
+            <strong>développement web</strong>.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION MÉTHODOLOGIE -->
+    <section class="section methodology">
+
+      <h2>Notre méthodologie pédagogique</h2>
+
+      <p class="intro">
+        Une approche basée sur la pratique, le travail d’équipe
+        et l’entraide entre participants.
+      </p>
+
+      <!-- Cartes -->
+      <div class="cards">
+
+        <!-- CARD 1 -->
+        <div class="card">
+          <h3>Travail en groupe</h3>
+
+          <img src="../assets/img/photo2.jpg" alt="Travail en groupe">
+
+          <p>
+            Les participants travaillent en groupes de 5 personnes
+            afin de renforcer la collaboration et l’esprit d’équipe.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <h3>Veille & projets</h3>
+
+          <img src="../assets/img/photo22.jpg" alt="Veille et projets">
+
+          <p>
+            Chaque groupe reçoit des sujets de veille ou des projets
+            à réaliser et analyser collectivement.
+          </p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <h3>Présentation & entraide</h3>
+
+          <img src="../assets/img/photo3.jpg" alt="Présentation des projets">
+
+          <p>
+            Les travaux sont présentés, discutés et améliorés
+            grâce aux retours et à l’entraide du groupe.
+          </p>
+        </div>
+
       </div>
 
-    </div>
-  </section>
-
-  <!-- SECTION MÉTHODOLOGIE -->
-  <section class="section methodology">
-
-    <h2>Notre méthodologie pédagogique</h2>
-
-    <p class="intro">
-      Une approche basée sur la pratique, le travail d’équipe
-      et l’entraide entre participants.
-    </p>
-
-    <!-- Cartes -->
-    <div class="cards">
-
-      <!-- CARD 1 -->
-      <div class="card">
-        <h3>Travail en groupe</h3>
-
-        <img src="photo2.jpg" alt="Travail en groupe">
-
-        <p>
-          Les participants travaillent en groupes de 5 personnes
-          afin de renforcer la collaboration et l’esprit d’équipe.
-        </p>
+      <!-- Résultats attendus -->
+      <div class="resultats">
+        <h3>Résultats attendus</h3>
+        <ul>
+          <li>Travailler efficacement en équipe</li>
+          <li>Présenter un projet clairement</li>
+          <li>Appliquer des compétences digitales</li>
+          <li>Gagner en confiance</li>
+        </ul>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="card">
-        <h3>Veille & projets</h3>
+    </section>
 
-        <img src="photo22.jpg" alt="Veille et projets">
+  </main>
 
-        <p>
-          Chaque groupe reçoit des sujets de veille ou des projets
-          à réaliser et analyser collectivement.
-        </p>
-      </div>
+  <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>Thiès Kaay Ñu Coder</h4>
+                <p>
+                    Inspiré par les couleurs et les valeurs de Wommate.
+                    Ensemble pour le numérique à Thiès.
+                </p>
+            </div>
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#pourquoi">Pourquoi nous ?</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>Thiès, Sénégal</p>
+                <p>Email: contact@kaaygnucoder.sn</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Thiès Kaay Ñu Coder. Développé avec passion.</p>
+        </div>
+    </footer>
 
-      <!-- CARD 3 -->
-      <div class="card">
-        <h3>Présentation & entraide</h3>
-
-        <img src="photo3.jpg" alt="Présentation des projets">
-
-        <p>
-          Les travaux sont présentés, discutés et améliorés
-          grâce aux retours et à l’entraide du groupe.
-        </p>
-      </div>
-
-    </div>
-
-    <!-- Résultats attendus -->
-    <div class="resultats">
-      <h3>Résultats attendus</h3>
-      <ul>
-        <li>Travailler efficacement en équipe</li>
-        <li>Présenter un projet clairement</li>
-        <li>Appliquer des compétences digitales</li>
-        <li>Gagner en confiance</li>
-      </ul>
-    </div>
-
-  </section>
-
-</main>
-
-<script src="thies.js"></script>
+  <script src="../assets/js/thies.js"></script>
 </body>
 </html>
