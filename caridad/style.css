@@ -55,9 +55,9 @@ input{
 
 .bouton{
     background-color: transparent;/*arriere plan du bouton*/
-    font-size: 25px;//*taille de l'ecriture*/
-    width: 90%;
+    font-size: 25px;/*taille de l'ecriture*/
     padding: 10px;
+    width: 90px;
     margin: 5px;
     border-radius: 25px;
     outline: none;
