@@ -10,6 +10,15 @@
     --nav-height: 80px;
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ================= HEADER ================= */
 
 /* --- RESET & BASE --- */
 * {
@@ -229,7 +238,6 @@ ul {
     box-shadow: var(--shadow);
     border-radius: 15px;
     padding: 80px 40px;
-    margin-bottom: 60px;
     text-align: center;
 }
 #pourquoi h2 {
@@ -373,5 +381,228 @@ ul {
 
     .nav-menu.active {
         right: 0;
+    }
+}
+
+
+/* selecteur qui selectionne tout les elements de la page */
+* {
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;   /*la largeur et la hauteur incluent padding et bordure */
+}
+
+/* VARIABLES*/
+ :root {                       /*représente l’élément racine du documen */
+  --primary: #1B91B1;
+   --secondary: #DC2C8C;    /*variables personnalisées que tu peux réutiliser dans ton CSS. */
+  --white: #ffffff;
+  --gray: #f4f4f4;
+}
+
+
+/* ================= CONCEPT ================= */
+.concept {
+  background: linear-gradient(
+    135deg,
+    #1B91B1,
+    #DC2C8C
+  ); 
+  color: white;
+}
+
+.content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Ajoute un espace de 40px entre chaque élément de la liste */
+}
+
+.content img {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.text {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 12px;
+  line-height: 30px;
+}
+
+/*  MÉTHODOLOGIE  */
+.methodology {
+  background-color: var(--gray);
+  text-align: center;
+}
+
+
+.cards {
+  display: flex;
+  gap: 20px;  /* Ajoute un espace de 20px entre chaque élément de la liste */
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1;
+  border-top: 5px solid var(--secondary);
+}
+
+/* Image dans les cards */
+.card img {
+  width: 100%;           /* L’image prend toute la largeur de son conteneur (.card) */
+  height: 160px;           
+  object-fit: cover;     /* L’image remplit le conteneur sans déformer, en coupant si nécessaire */
+  border-radius: 8px;      
+  margin: 10px 0 15px;   /* Marge : 10px en haut, 0 à gauche/droite, 15px en bas */
+}
+/* ================= RÉSULTATS ================= */
+.resultats {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+.resultats ul {
+  list-style: none;      /* enlève les points */
+  padding-left: 0;       /* enlève l’espace à gauche */
+  margin: 0;
+}
+.resultats li {
+  padding: 5px 0;       /*espacer les lignes */
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+ 
+
+ 
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+/* ================= HERO ================= */
+
+
+.hero-content {
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+
+.hero-content a:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+/* ================= SECTIONS ================= */
+section {
+    padding: 90px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+/* ================= FORMULAIRE ================= */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    background: #0aa2c0;
+    color: #fff;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #0aa2c0;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: linear-gradient(90deg, #1b91b1, #dc2c8c);
+    color: #fff;
+    padding: 60px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    color: #dc2c8c;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.3rem;
     }
 }
