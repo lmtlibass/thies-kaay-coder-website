@@ -124,7 +124,17 @@ button:hover {
   margin-top: 15px;
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+}
 
+footer a {
+  color: #0a1f44;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
