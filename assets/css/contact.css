@@ -92,22 +92,6 @@
     margin-top: 10px;
 }
 
-/* Footer de la page contact */
-footer {
-    text-align: center;
-    padding: 40px 0;
-    background-color: var(--white);
-}
-
-footer a {
-    color: var(--text-gray);
-    font-size: 0.9rem;
-    transition: var(--transition);
-}
-
-footer a:hover {
-    color: var(--secondary-color);
-}
 
 /* --- RESPONSIVE --- */
 @media (max-width: 600px) {
