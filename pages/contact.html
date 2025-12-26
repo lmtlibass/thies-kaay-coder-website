@@ -1,61 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Code Vision</title>
-  <link rel="stylesheet" href="contact.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thiès Kaay Ñu Coder</title>
+        <link rel="stylesheet" href="../assets/css/contact.css" />
+        <link rel="stylesheet" href="../assets/css/nav.css" />
+        <link rel="stylesheet" href="../assets/css/footer.css" />
+    </head>
+    <body>
+        <!-- HEADER AVEC LOGO -->
+        <header class="header">
+            <nav class="navbar-container">
+                <a href="#" class="logo">Thiès <span>Kaay Ñu Coder</span></a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li>
+                        <a href="../index.html" class="nav-link">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="concept.html" class="nav-link"
+                            >Concept & Méthodologie</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../index.html#pourquoi" class="nav-link"
+                            >Pourquoi nous ?</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="btn-cta"
+                            >Rejoindre l'aventure</a
+                        >
+                    </li>
+                </ul>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
 
-<!-- HEADER AVEC LOGO -->
-<header class="header">
-  <div class="header-container">
-    <!-- LOGO -->
-    <div class="logo">
-      <img src="logos-code-vision.png" alt="Logos Code Vision">
-    </div>
+        <!-- CONTENU PRINCIPAL -->
+        <main class="container">
+            <form id="contactForm" novalidate>
+                <div class="field">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" required />
+                    <small class="error"></small>
+                </div>
 
-    <!-- TITRE -->
-    <div class="header-text">
-      <h1>Code Vision</h1>
-      <p>Contactez-nous</p>
-    </div>
-  </div>
-</header>
+                <div class="field">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" required />
+                    <small class="error"></small>
+                </div>
 
-<!-- CONTENU PRINCIPAL -->
-<main class="container">
-  <form id="contactForm" novalidate>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                    <small class="error"></small>
+                </div>
 
-    <div class="field">
-      <label for="name">Nom complet</label>
-      <input type="text" id="name" required>
-      <small class="error"></small>
-    </div>
+                <button type="submit">Envoyer</button>
 
-    <div class="field">
-      <label for="email">Adresse email</label>
-      <input type="email" id="email" required>
-      <small class="error"></small>
-    </div>
+                <p id="successMessage"></p>
+            </form>
+        </main>
 
-    <div class="field">
-      <label for="message">Message</label>
-      <textarea id="message" rows="5" required></textarea>
-      <small class="error"></small>
-    </div>
-
-    <button type="submit">Envoyer</button>
-
-    <p id="successMessage"></p>
-  </form>
-</main>
-
-<footer>
-  <a href="mentions-legales.html">Mentions légales</a>
-</footer>
-
-<script src="contact.js"></script>
-</body>
+        <div class="legales">
+            <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h4>Thiès Kaay Ñu Coder</h4>
+                    <p>
+                        Inspiré par les couleurs et les valeurs de Wommate.
+                        Ensemble pour le numérique à Thiès.
+                    </p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#concept">Concept</a></li>
+                        <li><a href="#pourquoi">Pourquoi nous ?</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>Thiès, Sénégal</p>
+                    <p>Email: contact@kaaygnucoder.sn</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thiès Kaay Ñu Coder. Développé avec passion.</p>
+            </div>
+        </footer>
+        <script src="../assets/js/accueil.js"></script>
+        <script src="../assets/js/contact.js"></script>
+    </body>
 </html>
