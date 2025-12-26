@@ -1,0 +1,99 @@
+/* --- STYLE PROGRAMMES --- */
+.container-programmes {
+    padding-top: calc(var(--nav-height) + 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Filtrage */
+.filter-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Grille et Cartes */
+.dynamic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, opacity 0.4s ease;
+    position: relative;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    background: #e0f2f7;
+    color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.card-badge.orange {
+    background: #fdf2f8;
+    color: var(--secondary-color);
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: var(--text-dark);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    font-style: italic;
+}
+
+/* Animation de filtrage */
+.hide {
+    display: none;
+    opacity: 0;
+}
