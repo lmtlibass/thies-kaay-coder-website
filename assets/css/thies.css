@@ -66,6 +66,7 @@ body {
 /* ================= SECTIONS ================= */
 .section {
   padding: 60px 20px;
+  margin: 120px;
 }
 .page{
   padding-top: 60px;

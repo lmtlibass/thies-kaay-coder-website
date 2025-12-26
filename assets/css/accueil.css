@@ -304,9 +304,13 @@ ul {
 
 /* --- FOOTER --- */
 .footer {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background: linear-gradient(
+    135deg,
+    #1B91B1,
+    #DC2C8C
+  );
     padding: 60px 0 20px;
+    color : var(--white);
 }
 
 .footer-content {
