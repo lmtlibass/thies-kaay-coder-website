@@ -4,36 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thiès Kaay Gnou Coder</title>
-  <link rel="stylesheet" href="thies.css">
+  <link rel="stylesheet" href="../assets/css/thies.css">
 </head>
 <body>
 
 <!--  EN-TÊTE DU SITE -->
-<header>
-  <nav class="navbar">
-
-    <!-- Logo à gauche -->
-    <div class="logo">
-      <!-- styliser un texte -->
-      <span>Thiès Kaay Gnou Coder</span>
-    </div>
-
-    <!-- Bouton menu hamburger (mobile) -->
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
-    </div>
-
-    <!-- Menu de navigation -->
-    <ul class="menu" id="menu">
-      <li><a href="#accueil">Accueil</a></li>
-      <!-- Page active -->
-      <li><a href="#concept" class="active">Concept & Méthodologie</a></li>
-      <li><a href="#formation">Formation</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-  </nav>
-</header>
+<header class="header">
+            <nav class="navbar-container">
+                <a href="#" class="logo">Thiès <span>Kaay Ñu Coder</span></a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="concept.html" class="nav-link">Concept</a></li>
+                    <li>
+                        <a href="mentions-legales.html" class="nav-link">Pourquoi nous ?</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="btn-cta"
+                            >Rejoindre l'aventure</a
+                        >
+                    </li>
+                </ul>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
 
 <!-- CONTENU PRINCIPAL -->
 <main class="page">
@@ -43,7 +40,7 @@
     <div class="content">
 
       <!-- Image du concept -->
-      <img src="image.jpeg" alt="Immersion digitale">
+      <img src="../assets/img/image.jpeg" alt="Immersion digitale">
 
       <!-- Texte du concept -->
       <div class="text">
